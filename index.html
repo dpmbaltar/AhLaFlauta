@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="es-AR">
+
+<head>
+    <title>Ah, la Flauta!</title>
+    
+    <meta charset= "utf-8">
+    <meta name= "description" content="Panadería Ah, La Flauta">
+	
+	<meta property="og:title" content="Ah, la flauta">
+    <meta property="og:description" content="¡Bienvenidos a Ah, La Flauta! 🥖✨ Donde cada día horneamos sueños convertidos en deliciosas realidades. Con 33 años de pasión por la panificación, cada mordisco es una experiencia que celebra la tradición y la frescura. Descubre el encanto de nuestra panadería en cada rincón y deja que el aroma de lo recién horneado te transporte a un mundo de sabores auténticos. ¡Ven, siente y saborea la diferencia en Ah, La Flauta! 🌟">
+    <meta property="og:image" content="https://ahlaflauta.com.ar/img/PanFlauta.jpg">
+    <meta property="og:url" content="https://ahlaflauta.com.ar">
+    
+    <link href="css/estilosFinal.css" rel="stylesheet"/>
+    <link rel="shortcut icon" href="img/MedialunaPag.png" />
+</head>
+    
+<body>
+    
+    <div id="ContenedorPrincipal">
+        
+        <header>
+            
+            <div class = "contenedorEncabezado">
+                
+                <div class="Encabezado">
+                    
+                    <a target="_self" href="index.html">
+                        <img src="img/LogoEncabezado.png" alt="Ah, la Flauta!">
+                    </a>
+                
+                </div>
+
+                <div class = "menu_Encabezado">
+                    
+                    <nav>
+                        <div><a href = "index.html">NOSOTROS</a></div>
+                        <div><a href = "ProductosPanificados.html">PRODUCTOS</a></div>
+                        <div><a href = "Contacto.html">CONTACTO</a></div>
+                    </nav>
+                    
+                </div>
+
+            </div>
+            
+        </header>
+
+        <section class ="ContenidoInicial">
+            
+            <aticle>       
+                
+                    <div class="visorImagen">
+                        <img class= "imagen" src="img/VisorImg1.jpg" alt="Imagen1">
+                    </div>
+                
+                    <div class="visorImagen">
+                        <img class= "imagen" src="img/VisorImg2.jpg" alt="Imagen2">
+                    </div>
+                
+                    <div class="visorImagen">
+                        <img class= "imagen" src="img/VisorImg3.jpg" alt="Imagen3">
+                    </div>
+                
+                    <div class="visorImagen">
+                        <img class= "imagen" src="img/VisorImg4.jpg" alt="Imagen4">
+                    </div>
+
+                <script>
+                    var indImg = 0;
+                    mostrarImagen();
+                    function mostrarImagen() {
+                       var i;
+                       var img = document.getElementsByClassName("visorImagen");
+                       for (i = 0; i < img.length; i++) {
+                            img[i].style.display = "none";
+                       }
+
+                       indImg++;
+
+                       if(indImg > img.length) {indImg = 1}
+                            img[indImg-1].style.display = "block";
+                            setTimeout(mostrarImagen,3000);
+                    }
+                </script>
+                
+            </aticle>
+            
+        </section>
+        
+        <section class="TituloNosotros">
+            
+            <aticle>
+                <h1>NOS ENCANTA HACER COSAS RICAS</h1>
+                <p><strong>Nos gusta pensar en nuestros clientes como nuestros amigos y en nuestra panadería como nuestra casa y por esto, queremos que tengan la mejor experiencia cuando vengan a visitarnos y de esta forma, que regresen. Es una promesa.</strong></p>
+            </aticle>
+            
+        </section>
+        
+        <footer>
+            
+            <div id="Fila1Footer">
+                
+                <section id="footerLeft">
+                    <!-- #Acceso a Facebook -->
+                    <a href="https://www.facebook.com/" target= "_blank" title= "Acceso Facebook Ah, la Flauta!">
+                        <img src="img/IconoFace.png" alt="Botón Facebook">
+                    </a>
+
+                     <!-- #Acceso a Instagram -->
+                    <a href="https://www.instagram.com/" target= "_blank" title= "Acceso Instagram Ah, la Flauta!">
+                        <img src="img/IconoInstagram.png" alt="Botón Instagram">
+                    </a>
+
+                     <!-- #Acceso a GMAIL -->
+                    <a href="mailto:ahlaflautapanaderia@gmail.com"
+                       title= "Enviar mail a Ah, la Flauta! ">
+                        <img src="img/IconoGmail.png" alt="Botón Gmail">
+                    </a>
+
+                </section>
+                
+                <section id="contacto">
+                    <!-- #Datos de Contacto -->
+                    <datosContacto>
+                        <p>
+                            <strong>Dirección:</strong> Av. Belgrano y Matheus
+                            <br/>
+                            Villa Regina - Rio Negro
+                            <br/>
+                            <strong>Teléfono:</strong> 0298-4451120
+                        </p>
+                    </datosContacto>
+                </section>
+
+                <section id="HorarioAtencion">
+                    <!-- #Datos de Contacto -->
+                    <datosContacto> 
+                        <strong> Horarios de Atención:</strong>
+                        <ul>
+                            <li>Lun. a Sab. 07:30 a 13:00 hs.</li>
+                            <li>Lun. a Sab. 17:00 a 21:00 hs.</li>
+                            <li>Dom. 07:30 a 13:00 hs.</li>
+                        </ul>
+                    </datosContacto>
+                </section>
+
+                <section id="footerRight">
+                    <a href="https://drive.google.com/open?id=1fXddi0DRAcgynnlrWUG8lpSxI-6f9U6v&usp=sharing" target= "_blank" title= "Ah, la Flauta! en GoogleMaps" >
+                    <img src="img/IconoMaps.png" alt="Botón GoogleMaps">
+                    </a>
+                </section>
+
+            </div>
+            
+            <div id="Fila2Footer">
+                <section id="copyR">
+                    <p>
+                        © COPYRIGHT 2019 - Panadería Ah, la Flauta!  - "Distinción en Calidad" <br> Creado por: Los Tres Mosqueteros
+                    </p>
+                </section> 
+            </div>
+            
+        </footer>
+        
+    </div>
+    
+</body>
+
+</html>
