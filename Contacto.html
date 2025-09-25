@@ -1,181 +1,141 @@
 <!doctype html>
-<html lang="es-AR">
+<html lang="es">
 
 <head>
-    <title>Ah, la Flauta! Contactenos</title>
-    
-    <meta charset= "utf-8">
-    <meta name= "description" content="Panadería Ah, La Flauta">
-    
-    <link href="css/estilosFinal.css" rel="stylesheet"/>
-    <link rel="shortcut icon" href="img/MedialunaPag.png" />
-    
+    <meta charset="utf-8">
+    <title>Ah, la Flauta! - Contáctenos</title>
+    <meta name="description" content="Panadería Ah, La Flauta - Formulario de contacto y pedidos">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/estilosFinal.css" rel="stylesheet">
+    <link rel="icon" href="img/MedialunaPag.png">
 </head>
-    
+
 <body>
-    
     <div id="ContenedorPrincipal">
-        
+
         <header>
-            
-            <div class = "contenedorEncabezado">
-                
+            <div class="contenedorEncabezado">
                 <div class="Encabezado">
-                    
-                    <a target="_self" href="index.html">
-                        <!--<h1>Ah, la Flauta!</h1>-->
-                        <img src="img/LogoEncabezado.png" alt="Botón Gmail">
+                    <a href="index.html">
+                        <img src="img/LogoEncabezado.png" alt="Logo de la panadería Ah, la Flauta!">
                     </a>
-                    
                 </div>
 
-                <div class = "menu_Encabezado">
-                    
-                    <nav>
-                        <div><a href = "index.html">NOSOTROS</a></div>
-                        <div><a href = "ProductosPanificados.html">PRODUCTOS</a></div>
-                        <div><a href = "Contacto.html">CONTACTO</a></div>
-                    </nav>
-                    
-                </div>
-
+                <nav aria-label="Menú principal" class="menu_Encabezado">
+                    <ul>
+                        <li><a href="index.html">Nosotros</a></li>
+                        <li><a href="ProductosPanificados.html">Productos</a></li>
+                        <li><a href="Contacto.html" aria-current="page" class="active">Contacto</a></li>
+                    </ul>
+                </nav>
             </div>
-            
         </header>
-    
-        <div class="ContenedorContacto">
+
+        <main class="ContenedorContacto">
             <section class="FormContacto">
-
                 <h1>Realizá tu pedido aquí</h1>
-
                 <p>
-                    Completá el formulario y realizá tu consulta o pedido, tambien podes ingresar lo que pensás de nuestra empresa. Tus comentarios y sugerencias son muy importantes para nosotros.
+                    Completá el formulario para realizar tu consulta o pedido. También podés dejarnos tu opinión,
+                    comentarios y sugerencias.
                 </p>
 
-                <div class="cuadroContacto">
+                <form action="#" method="post" aria-describedby="instrucciones-contacto">
+                    <p id="instrucciones-contacto">Todos los campos marcados con * son obligatorios.</p>
 
-                    <div id="Fila1">
-
-                        <div id="NombreContacto">
-                            <span>
-                                <input id="comboNombre" type="text" title= "Nombre" placeholder="Nombre y Apellido (*)">
-                            </span>
-                        </div>
-
-                        <div id="EmailContacto">
-                            <span>
-                                <input id="comboEmail" type="text" title= "Email" placeholder="Email (*)">
-                            </span>
-                        </div>
-
+                    <div>
+                        <label for="comboNombre">Nombre y Apellido *</label>
+                        <input id="comboNombre" name="nombre" type="text" required aria-required="true" autocomplete="name">
                     </div>
 
-                    <div id="Fila2">
-
-                        <div id="AsuntoContacto">
-                            <span>
-                                <input id="comboAsunto" type="text" title= "Asunto" placeholder="Asunto (*)">
-                            </span>
-                        </div>
-
+                    <div>
+                        <label for="comboEmail">Correo electrónico *</label>
+                        <input id="comboEmail" name="email" type="email" required aria-required="true" autocomplete="email">
                     </div>
 
-                    <div id="Fila3">
-
-                        <div id="DetalleContacto">
-                            <span>
-                                <textarea id="comboDescripcion" title="Detalle" cols="40" rows="10" aria-required="true" aria-invalid="false" placeholder="Mensaje (*)"></textarea>
-                            </span>
-                        </div>
-
+                    <div>
+                        <label for="comboTel">Teléfono *</label>
+                        <input id="comboTel" name="phone" type="tel" required aria-required="true" autocomplete="phone">
                     </div>
 
-                    <div id="Fila4">
-
-                        <div id="EnviarContacto">
-                            <a href="#">Enviar Formlario</a>
-                        </div>
-
+                    <div>
+                        <label for="comboAsunto">Asunto *</label>
+                        <input id="comboAsunto" name="asunto" type="text" required aria-required="true">
                     </div>
 
-                </div>
+                    <div>
+                        <label for="comboDescripcion">Mensaje *</label>
+                        <textarea id="comboDescripcion" name="mensaje" rows="6" required
+                            aria-required="true"></textarea>
+                    </div>
 
+                    <div>
+                        <button id="EnviarContacto" type="submit">Enviar formulario</button>
+                    </div>
+                </form>
             </section>
 
             <section class="MapaGoogle">
-                <iframe src="https://www.google.com/maps/d/embed?mid=1fXddi0DRAcgynnlrWUG8lpSxI-6f9U6v&hl=es"></iframe>
+                <h2>Ubicación</h2>
+                <iframe src="https://www.google.com/maps/d/embed?mid=1fXddi0DRAcgynnlrWUG8lpSxI-6f9U6v&hl=es"
+                    title="Mapa de ubicación de la panadería Ah, la Flauta!" width="600" height="450" style="border:0;"
+                    loading="lazy">
+                </iframe>
             </section>
-            
-        </div>
-        
+        </main>
+
         <footer>
-            
             <div id="Fila1Footer">
-                
-                <section id="footerLeft">
-                    <!-- #Acceso a Facebook -->
-                    <a href="https://www.facebook.com/" target= "_blank" title= "Acceso Facebook Ah, la Flauta!">
-                        <img src="img/IconoFace.png" alt="Botón Facebook">
+                <section id="footerLeft" aria-label="Redes sociales">
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                        aria-label="Facebook de Ah, la Flauta!">
+                        <img src="img/IconoFace.png" alt="">
                     </a>
-
-                     <!-- #Acceso a Instagram -->
-                    <a href="https://www.instagram.com/" target= "_blank" title= "Acceso Instagram Ah, la Flauta!">
-                        <img src="img/IconoInstagram.png" alt="Botón Instagram">
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                        aria-label="Instagram de Ah, la Flauta!">
+                        <img src="img/IconoInstagram.png" alt="">
                     </a>
-
-                     <!-- #Acceso a GMAIL -->
-                    <a href="mailto:ahlaflautapanaderia@gmail.com"
-                       title= "Enviar mail a Ah, la Flauta! ">
-                        <img src="img/IconoGmail.png" alt="Botón Gmail">
+                    <a href="mailto:ahlaflautapanaderia@gmail.com" aria-label="Enviar correo a Ah, la Flauta!">
+                        <img src="img/IconoGmail.png" alt="">
                     </a>
-
                 </section>
-                
+
                 <section id="contacto">
-                    <!-- #Datos de Contacto -->
-                    <datosContacto>
+                    <h2>Datos de contacto</h2>
+                    <address>
                         <p>
-                            <strong>Dirección:</strong> Av. Belgrano y Matheus
-                            <br/>
-                            Villa Regina - Rio Negro
-                            <br/>
-                            <strong>Teléfono:</strong> 0298-4451120
+                            <strong>Dirección:</strong> Av. Belgrano y Matheus<br>
+                            Villa Regina - Río Negro<br>
+                            <strong>Teléfono:</strong> <a href="tel:+542984451120">0298-4451120</a>
                         </p>
-                    </datosContacto>
+                    </address>
                 </section>
 
                 <section id="HorarioAtencion">
-                    <!-- #Datos de Contacto -->
-                    <datosContacto> 
-                        <strong> Horarios de Atención:</strong>
-                        <ul>
-                            <li>Lun. a Sab. 07:30 a 13:00 hs.</li>
-                            <li>Lun. a Sab. 17:00 a 21:00 hs.</li>
-                            <li>Dom. 07:30 a 13:00 hs.</li>
-                        </ul>
-                    </datosContacto>
+                    <h2>Horarios de atención</h2>
+                    <ul>
+                        <li>Lunes a Sábado: 07:30 a 13:00 hs.</li>
+                        <li>Lunes a Sábado: 17:00 a 21:00 hs.</li>
+                        <li>Domingo: 07:30 a 13:00 hs.</li>
+                    </ul>
                 </section>
 
                 <section id="footerRight">
-                    <a href="https://drive.google.com/open?id=1fXddi0DRAcgynnlrWUG8lpSxI-6f9U6v&usp=sharing" target= "_blank" title= "Ah, la Flauta! en GoogleMaps" >
-                    <img src="img/IconoMaps.png" alt="Botón GoogleMaps">
+                    <a href="https://drive.google.com/open?id=1fXddi0DRAcgynnlrWUG8lpSxI-6f9U6v&usp=sharing"
+                        target="_blank" rel="noopener" aria-label="Ah, la Flauta! en Google Maps">
+                        <img src="img/IconoMaps.png" alt="">
                     </a>
                 </section>
+            </div>
 
-            </div>
-            
             <div id="Fila2Footer">
-                <section id="copyR">
-                    <p>
-                        © COPYRIGHT 2019 - Panadería Ah, la Flauta!  - "Distinción en Calidad" <br> Creado por: Los Tres Mosqueteros
-                    </p>
-                </section> 
+                <p>
+                    © COPYRIGHT 2019 - Panadería Ah, la Flauta! - "Distinción en Calidad"<br>
+                    Creado por: Los Tres Mosqueteros
+                </p>
             </div>
-            
         </footer>
-        
     </div>
-    
 </body>
 
 </html>

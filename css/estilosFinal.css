@@ -1,15 +1,16 @@
-@font-face{
-        font-family:Cabecera;
-        src: url("../font/LetraCabecera3.ttf");
+@font-face {
+    font-family: Cabecera;
+    src: url("../font/LetraCabecera3.ttf");
 }
 
-@font-face{
-        font-family:LetraInterna;
-        src: url("../font/LetraInterna4.otf");
+@font-face {
+    font-family: LetraInterna;
+    src: url("../font/LetraInterna4.otf");
 }
 
 
-html, body {
+html,
+body {
     padding: 0px;
     margin: 0px;
     height: 100%;
@@ -26,412 +27,502 @@ html, body {
 
 
 /* Inicio Estilos Encabezado*/
-    header{
-        width: 100%;
-        height: 80px;
-        margin-bottom: 15px;
-    }
+header {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 15px;
+}
 
-    .contenedorEncabezado{
-        height: 100%;
-        width: 100%;
-        background-color: rgba(255,204,0, 0.4);
-    }
-    .Encabezado {
-        float: left;
-        width: 30%;
-        height: 100%;
-    }
-    .Encabezado a img{
-        max-height: 100%;
-        max-width: 100%;
-    }
-    .menu_Encabezado{
-        width: 65%;
-        height: 100%;
-        float: right;
-    }
-    .menu_Encabezado nav div{
-        float: left;
-        text-align: center;
-        width: 30%;
-        height: 100%;
-    }
-    .menu_Encabezado nav div a{
-        color: black;
-        font-size: 2.2vw;
-        font-family: LetraInterna;
-        text-decoration: none;
-        line-height: 90px;
-    }
+.contenedorEncabezado {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 204, 0, 0.4);
+}
+
+.Encabezado {
+    float: left;
+    width: 30%;
+    height: 100%;
+}
+
+.Encabezado a img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.menu_Encabezado {
+    width: 65%;
+    height: 100%;
+    float: right;
+}
+
+.menu_Encabezado ul {
+    margin: 0;
+}
+
+.menu_Encabezado nav div,
+.menu_Encabezado ul li {
+    float: left;
+    text-align: center;
+    width: 30%;
+    height: 100%;
+}
+
+.menu_Encabezado ul li {
+    display: block;
+}
+
+.menu_Encabezado nav div a,
+.menu_Encabezado ul li a {
+    color: black;
+    font-size: 2.2vw;
+    font-family: LetraInterna;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 90px;
+}
+
+.menu_Encabezado nav div a.active,
+.menu_Encabezado ul li a.active {
+    background-color: #7A230A;
+    /* Marrón */
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 8px;
+}
+
 /* Fin Estilos Encabezado*/
 
 
 /*INICIO PÁGINA INICIO*/
-    .ContenidoInicial {
-        height: 100%;
-        width: 90%;
-        margin-left: 5%;
-        margin-bottom: 15px;
-    }
-    .imagen{
-        width: 100%;
-        height: 100%;
-    }
-    .visorImagen{
-        display:none;
-        
-    }
-    .TituloNosotros {
-        width: 90%;
-        background:rgba(252,250,246, 0.5);
-        margin-left: 5%;
-        margin-left: 5%;
-        margin-bottom: 15px;
-        text-align: center;
-        font-family:LetraInterna;
-        height: 100px
-    }
+.ContenidoInicial {
+    height: 100%;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.imagen {
+    width: 60%;
+    height: 60%;
+}
+
+.visorImagen {
+    display: none;
+
+}
+
+.TituloNosotros {
+    width: 90%;
+    background: rgba(252, 250, 246, 0.5);
+    margin-left: 5%;
+    margin-left: 5%;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: LetraInterna;
+    height: 100px
+}
+
+.TituloNosotros p {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 15px;
+    font-family: LetraInterna, Arial, sans-serif;
+    color: #000000;
+}
+
 /*FIN PÁGINA INICIO*/
 
+/* INICIO ESTILO VIDEO */
+.videoPanaderia {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.videoPanaderia h2 {
+    font-family: Cabecera;
+    color: brown;
+    margin-bottom: 18px;
+}
+
+.videoPanaderia video {
+    width: 800px;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/*FIN ESTILO VIDEO*/
 
 /*Inicio Resto de Página*/
-    .MENUIZQ_nav{
-        
-        color:brown;
-        text-align: center;
-        width: 20%;
-        float: left;
-    }
-    .MENUIZQ_nav h1{
-        font-family:Cabecera;
-        font-size: 3vw;
-        margin: 0px;
-    }
+.MENUIZQ_nav {
+
+    color: brown;
+    text-align: center;
+    width: 20%;
+    float: left;
+}
+
+.MENUIZQ_nav h1 {
+    font-family: Cabecera;
+    font-size: 3vw;
+    margin: 0px;
+}
+
 /*Fin Resto de Página*/
 
 
 /*INICIO REGION CONTACTO*/
-    .FormContacto {
-        background:rgba(252,250,246, 0.5);
-        margin-bottom: 10px;
-    }
-    .FormContacto h1 {
-        font-family: Cabecera;
-        text-align: center;
-        color: brown;
-    }
-    .FormContacto p{
-        font-family: LetraInterna;
-        text-align: center;
-    }
-    .cuadroContacto {
-        width: 100%;
-    }
-    #NombreContacto{
-        width: 45%;
-        float: left;
-        margin-right: 4%;
-        margin-left: 3%;
-    }
-    #comboNombre {
-        width: 100%;
-        height: 30px;
-        border-radius: 10px 10px 10px 10px;
-        padding: 2px;
-    }
-    #EmailContacto{
-        width: 45%;
-        float: left;
-    }
-    #comboEmail {
-        width: 100%;
-        height: 30px;
-        border-radius: 10px 10px 10px 10px;
-        padding: 2px;
-    }
-    #comboAsunto {
-        width: 94%;
-        height: 30px;
-        border-radius: 10px 10px 10px 10px;
-        padding: 2px;
-        margin-left: 3%;
-    }
-    #DetalleContacto {
-        width: 100%;
-        height: 30px;
-        padding-top: 10px;
-    }
-    #comboDescripcion {
-        width: 94%;
-        height: 150px;
-        border-radius: 10px 10px 10px 10px;
-        padding: 2px;
-        margin-left: 3%;
-    }
-    #EnviarContacto{
-        list-style: none;
-        text-shadow: 15px 20px 45px yelow;
-        font-family:LetraInterna;
-        padding: 10px 0px;
-        border: ridge ;
-        border-radius: 15px 15px 15px 15px;
-        border-color: wheat;
-        border-width: 3px 3px 3px 3px;
-        background-color: #7A230A;
-        width: 33%;
-        margin-left: 33%;
-        
-    }
-    #EnviarContacto a{
-        text-decoration: none;
-        color: floralwhite;
-    }
-    #EnviarContacto a:visited {
-        /*Color ya has visitado el item*/
-        text-decoration: none;
-        color: floralwhite;
-    }
-    #EnviarContacto:hover {
-        /*Resalta el item cuando pasa el cursor encima*/
-        background-color: #F9A83B;
-    }
+.FormContacto {
+    background: rgba(252, 250, 246, 0.5);
+    margin-bottom: 10px;
+    padding: 2rem;
+}
 
-    #Fila1 {
-        height: 35px;
-        padding: 5px;
-    }
+.FormContacto h1 {
+    font-family: Cabecera;
+    text-align: center;
+    color: brown;
+}
 
-    #Fila2 {
-        height: 35px;
-        padding: 5px;
-    }
+.FormContacto p {
+    font-family: LetraInterna;
+    text-align: center;
+}
 
-    #Fila3 {
-        height: 170px;
-        padding: 5px;
-    }
-    #Fila4 {
-        width: 100%;
-        height: 55px;
-        text-align: center;
-    }
+.FormContacto label {
+    font-family: LetraInterna;
+    font-weight: bold;
+}
 
-    .MapaGoogle iframe{
-        width: 100%;
-        height: 300px;
-    }
+.FormContacto input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.25rem;
+    border: 1px solid #666;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.FormContacto textarea {
+    width: 100%;
+    height: 150px;
+    border: 1px solid #666;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    padding: 0.75rem;
+    margin-top: 0.25rem;
+}
+
+.cuadroContacto {
+    width: 100%;
+}
+
+#EnviarContacto {
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+    width: 100%;
+    background-color: #7a230a;
+    color: #000;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: floralwhite;
+}
+
+#EnviarContacto:hover {
+    /*Resalta el item cuando pasa el cursor encima*/
+    background-color: #F9A83B;
+}
+
+#Fila1 {
+    height: 35px;
+    padding: 5px;
+}
+
+#Fila2 {
+    height: 35px;
+    padding: 5px;
+}
+
+#Fila3 {
+    height: 170px;
+    padding: 5px;
+}
+
+#Fila4 {
+    width: 100%;
+    height: 55px;
+    text-align: center;
+}
+
+.MapaGoogle iframe {
+    width: 100%;
+    height: 300px;
+}
 
 /*FIN REGION CONTACTO*/
 
 
 /*Inicio Clases para descripcioón productos*/
-    #encabezadoProd {
-        background:rgba(252,250,246, 0.5);
-        padding-bottom: 5px;
-        margin-bottom: 5px;
-    }
-    infoEncabezado {
-        text-align: center;
-        font-size: 18px;
-    }
-    infoEncabezado h1{
-        margin: 0px;
-        
-    }
-    infoEncabezado p{
-        margin: 0px;
-    }
-    infoEncabezado p{
-        font-family:LetraInterna;
-    }
-    infoEncabezado h1{
-        font-family:Cabecera;
-        Color: brown;
-        font-size: 30px;
-        float:center;
-        margin-right: 15px;
-        margin-top: 0px;
-    }
+#encabezadoProd {
+    background: rgba(252, 250, 246, 0.5);
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+infoEncabezado {
+    text-align: center;
+    font-size: 18px;
+}
+
+infoEncabezado h1 {
+    margin: 0px;
+
+}
+
+infoEncabezado p {
+    margin: 0px;
+}
+
+infoEncabezado p {
+    font-family: LetraInterna;
+}
+
+infoEncabezado h1 {
+    font-family: Cabecera;
+    Color: brown;
+    font-size: 30px;
+    float: center;
+    margin-right: 15px;
+    margin-top: 0px;
+}
+
 /*Fin Clases para descripcioón productos*/
 
 
 /* INICIO ESTILO DESCRIPCION PRODUCTOS*/
-    #variedad {
-        width: 50%;
-        height: 20%;
-        text-decoration: none;
-        margin: 3px;
-    }
-    .infoVariedad {
-        text-align: left;
-        font-family: LetraInterna;
-        font-size: 18px;
-    }
-    #grupoVariedades {
-        margin-bottom: 5px;
-    }
-    .variedades {
-        padding: 10px;
-        background:rgba(252,250,246, 0.5);
-        overflow: hidden;
-    }
-    .descripcion {
-        text-align: left;
-        font-family:LetraInterna;
-        width: 70%;
-        font-size: 17px;
-        float: left
-    }
-    .descripcion h1{
-        font-family:Cabecera;
-        Color: brown;
-        margin: 0px;
-        margin-bottom: 5px;
-    }
-    .descripcion p{
-        margin: 0px;
+#variedad {
+    width: 50%;
+    height: 20%;
+    text-decoration: none;
+    margin: 3px;
+}
 
-    }
-    .imagenProd {
-        width: 30%;
-        height: 100%;
-        float: left;
-    }
-    #cuerpo {
-        text-align: center;
-        width: 75%;
-        float:left;
-        margin-left: 5px;
-    }
-    .imgCircular {
-        border-radius: 60%;
-        height: 130px;
-        width: 130px;
-    }
+.infoVariedad {
+    text-align: left;
+    font-family: LetraInterna;
+    font-size: 18px;
+}
+
+#grupoVariedades {
+    margin-bottom: 5px;
+}
+
+.variedades {
+    padding: 10px;
+    background: rgba(252, 250, 246, 0.5);
+    overflow: hidden;
+}
+
+.descripcion {
+    text-align: left;
+    font-family: LetraInterna;
+    width: 70%;
+    font-size: 17px;
+    float: left
+}
+
+.descripcion h1 {
+    font-family: Cabecera;
+    Color: brown;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+.descripcion p {
+    margin: 0px;
+
+}
+
+.imagenProd {
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+
+#cuerpo {
+    text-align: center;
+    width: 75%;
+    float: left;
+    margin-left: 5px;
+}
+
+.imgCircular {
+    border-radius: 60%;
+    height: 130px;
+    width: 130px;
+}
+
 /* FIN ESTILO DESCRIPCION PRODUCTOS*/
 
 /*Inicio Clases para Menú*/
-    .menu {
+.menu {
     /*Define el estilo del menu*/
-        width: 100%;
-        list-style: none;
-        text-align: center;
-        text-shadow: 15px 20px 45px yelow;
-        padding:0px;
-        margin: 0px;
-    }
-    .menu li {
-    /*Define el estilo de cada item del menu*/
-        font-family:LetraInterna;
-        padding: 10px 0px;
-        border: ridge ;
-        border-radius: 15px 15px 15px 15px;
-        border-color: wheat;
-        border-width: 3px 3px 3px 3px;
-        background-color: #7A230A;
-    }
-    /*Ultimo elemetos entre elementos hermanos*/
-    .menu li:last-child {
-        border-bottom: groove none;
-        border-bottom-width: 3px;
-    }
-    /*Color cuando no se ha visitado el item*/
-    .menu li a:link,
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    text-shadow: 15px 20px 45px yelow;
+    padding: 0px;
+    margin: 0px;
+}
 
-    .menu li a:visited {
-        /*Color ya has visitado el item*/
-        text-decoration: none;
-        color: floralwhite;
-    }
-    .menu li:hover {
-        /*Resalta el item cuando pasa el cursor encima*/
-        background-color: #F9A83B;
-    }
+.menu li {
+    /*Define el estilo de cada item del menu*/
+    font-family: LetraInterna;
+    padding: 10px 0px;
+    border: ridge;
+    border-radius: 15px 15px 15px 15px;
+    border-color: wheat;
+    border-width: 3px 3px 3px 3px;
+    background-color: #7A230A;
+}
+
+/*Ultimo elemetos entre elementos hermanos*/
+.menu li:last-child {
+    border-bottom: groove none;
+    border-bottom-width: 3px;
+}
+
+/*Color cuando no se ha visitado el item*/
+.menu li a:link,
+
+.menu li a:visited {
+    /*Color ya has visitado el item*/
+    text-decoration: none;
+    color: floralwhite;
+}
+
+.menu li:hover {
+    /*Resalta el item cuando pasa el cursor encima*/
+    background-color: #F9A83B;
+}
+
 /*Fin Clases para Menú*/
 
 
 /*Inicio Pie de Pagina*/
-    footer{
-        text-align: center;
-        height: 160px;
-        width: 100%;
-        background-color: rgba(255,204,0, 0.4);
-        bottom: 0px; /*Lo pone al final*/
-        clear: both;
-    }
-    #Fila1Footer {
-        height: 70%;
-    }
+footer {
+    text-align: center;
+    height: 160px;
+    width: 100%;
+    background-color: rgba(255, 204, 0, 0.4);
+    bottom: 0px;
+    /*Lo pone al final*/
+    clear: both;
+}
 
-    #Fila2Footer {
-        height: 30%;
-        font-family: LetraInterna;
-    }
-    #footerLeft{
-        width: 25%;
-        margin-top: 2em;
-        float: left;
-    }
-    #footerLeft a img{
-        width: 30px;
-        height: 30px;
-    }
-    #footerLeft a{
-        text-decoration: none;
-        margin: 3px;
-    }
-    datosContacto {
-        text-align: left;
-        font-family: LetraInterna;
-        font-size: 18px;
-    }
-    datosContacto ul{
-        margin: 0px;
-        padding: 0px;
-        list-style: none;
-    }
-    #contacto{
-        width: 24%;
-        float: left;
-    }
-    
-    #HorarioAtencion {
-        width: 24%;
-        float: left;
-    }
-    #footerRight{
-        width: 25%;
-        float: left;
-    }
-    #footerRight a img{
-        width: 100px;
-        height: 100px;
-    }
-        
+#Fila1Footer {
+    height: 70%;
+}
 
-    #copyR p{
-        margin: 0px;
-        padding: 0px;
-    }
+#Fila2Footer {
+    height: 30%;
+    font-family: LetraInterna;
+}
+
+#footerLeft {
+    width: 25%;
+    margin-top: 2em;
+    float: left;
+}
+
+#footerLeft a img {
+    width: 45px;
+    height: 45px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+#footerLeft a img:hover {
+    transform: scale(1.4);
+    opacity: 0.8;
+}
+
+#footerLeft a {
+    text-decoration: none;
+    margin: 3px;
+}
+
+datosContacto {
+    text-align: left;
+    font-family: LetraInterna;
+    font-size: 18px;
+}
+
+datosContacto ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+#contacto {
+    width: 24%;
+    float: left;
+    font-family: LetraInterna;
+}
+
+#contacto p {
+    text-align: left;
+}
+
+#HorarioAtencion {
+    width: 24%;
+    float: left;
+    font-family: LetraInterna;
+}
+
+#HorarioAtencion ul li {
+    list-style: none;
+    display: block;
+    text-align: left;
+}
+
+#footerRight {
+    width: 25%;
+    float: left;
+}
+
+#footerRight a img {
+    width: 100px;
+    height: 100px;
+}
+
+
+#copyR p {
+    margin: 0px;
+    padding: 0px;
+}
+
 /*FinPie de Pagina*/
 
 #TituloNosotros {
     width: 100%;
     height: 150px;
-    
+
 }
 
 .contenedor {
-    margin:1em;    
+    margin: 1em;
     width: 100%;
     background-color: gainsboro;
 }
 
 .ContenedorContacto {
-    width: 60%;
-    margin-left: 20%;
-    margin-bottom: 10px;
+    padding: 1rem;
+    margin: auto;
+    margin-bottom: 4rem;
 }
-
-

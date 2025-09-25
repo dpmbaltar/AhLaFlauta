@@ -1,0 +1,61 @@
+.encabezado-producto {
+    background: rgba(252, 250, 246, 0.5);
+    padding: 2rem;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    height: auto;
+}
+
+.encabezado-producto h1 {
+    margin: 1rem;
+    font-family: Cabecera;
+    color: brown;
+    font-size: 2rem;
+}
+
+.encabezado-producto p {
+    font-family: LetraInterna;
+}
+
+.producto {
+    background: rgba(252, 250, 246, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que se adapte en móviles */
+    align-items: flex-start;
+    /*margin: 1.5rem 0;*/
+    gap: 1rem;
+    padding-bottom: 1.5rem;
+    text-align: left;
+}
+
+.producto h2 {
+    font-family: cabecera;
+    color: #7A230A;
+}
+
+.producto .figura {
+    flex: 1 1 200px;
+    /* Crece, encoge, base mínima */
+    max-width: 160px;
+}
+
+.producto .figura img {
+    height: 130px;
+    width: 130px;
+    border-radius: 60%;
+    display: block;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.producto .descripcion {
+    flex: 2 1 400px;
+    /* Más espacio para el texto */
+    min-width: 250px;
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}

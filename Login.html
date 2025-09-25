@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio de sesión</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/login.css" />
+</head>
+
+<body>
+    <main role="main">
+        <h1>Inicio de sesión</h1>
+        <form aria-describedby="login-instructions">
+            <p id="login-instructions">Ingresa tu correo electrónico y contraseña para acceder.</p>
+
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" autocomplete="username" required aria-required="true">
+
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" autocomplete="current-password" required
+                aria-required="true">
+
+            <button type="submit">Ingresar</button>
+
+            <a href="#recuperar-pass" aria-label="Recuperar contraseña">¿Olvidaste tu contraseña?</a>
+        </form>
+    </main>
+</body>
+
+</html>
