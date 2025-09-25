@@ -5,27 +5,48 @@
     <meta charset="UTF-8">
     <title>Inicio de sesión</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/estilosFinal.css" />
     <link rel="stylesheet" href="css/login.css" />
 </head>
 
 <body>
-    <main role="main">
-        <h1>Inicio de sesión</h1>
-        <form aria-describedby="login-instructions">
-            <p id="login-instructions">Ingresa tu correo electrónico y contraseña para acceder.</p>
+    <div id="ContenedorPrincipal">
+        <header>
+            <div class="contenedorEncabezado">
+                <div class="Encabezado">
+                    <a href="index.html">
+                        <img src="img/LogoEncabezado.png" alt="Logo de la panadería Ah, la Flauta!">
+                    </a>
+                </div>
 
-            <label for="email">Correo electrónico</label>
-            <input type="email" id="email" name="email" autocomplete="username" required aria-required="true">
+                <nav aria-label="Menú principal" class="menu_Encabezado">
+                    <ul>
+                        <li><a href="index.html">Nosotros</a></li>
+                        <li><a href="ProductosPanificados.html">Productos</a></li>
+                        <li><a href="Contacto.html">Contacto</a></li>
+                        <li><a href="Login.html" aria-current="page" class="active">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main role="main" class="login">
+            <h1>Inicio de sesión</h1>
+            <form aria-describedby="login-instructions">
+                <p id="login-instructions">Ingresa tu correo electrónico y contraseña para acceder.</p>
 
-            <label for="password">Contraseña</label>
-            <input type="password" id="password" name="password" autocomplete="current-password" required
-                aria-required="true">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" autocomplete="username" required aria-required="true">
 
-            <button type="submit">Ingresar</button>
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" autocomplete="current-password" required
+                    aria-required="true">
 
-            <a href="#recuperar-pass" aria-label="Recuperar contraseña">¿Olvidaste tu contraseña?</a>
-        </form>
-    </main>
+                <button type="submit">Ingresar</button>
+
+                <a href="#recuperar-pass" aria-label="Recuperar contraseña">¿Olvidaste tu contraseña?</a>
+            </form>
+        </main>
+    </div>
 </body>
 
 </html>

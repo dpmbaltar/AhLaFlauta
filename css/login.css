@@ -1,9 +1,14 @@
+.login {
+    background: rgba(252, 250, 246, 0.8);
+    font-size: 1.4rem;
+}
+
 body {
-    font-family: sans-serif;
+    /*font-family: sans-serif;*/
+    font-family: LetraInterna;
     background-color: #f9f9f9;
     color: #222;
     margin: 0;
-    padding: 2rem;
 }
 
 main {
@@ -16,7 +21,8 @@ main {
 }
 
 h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
     margin-bottom: 1rem;
 }
 
@@ -36,30 +42,32 @@ input {
     box-sizing: border-box;
 }
 
-button {
+.login button {
     margin-top: 1.5rem;
     padding: 0.75rem;
     width: 100%;
     background-color: #f9a83b;
     color: #000;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     border: none;
     border-radius: 0.5rem;
     cursor: pointer;
+    font-family: LetraInterna;
+    text-transform: uppercase;
 }
 
-button:focus {
+.login button:focus {
     outline: 3px solid #7a230a;
     /* indicador visible de foco */
 }
 
-a {
+#recuperar-pass {
     display: inline-block;
     margin-top: 1rem;
     color: #7a230a;
 }
 
-a:focus {
+#recuperar-pass:focus {
     outline: 3px solid #7a230a;
 }
