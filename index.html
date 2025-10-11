@@ -3,52 +3,54 @@
 
 <head>
     <title>Ah, la Flauta!</title>
-    
+
     <meta charset= "utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name= "description" content="Panadería Ah, La Flauta">
-	
-	<meta property="og:title" content="Ah, la flauta">
+
+    <meta property="og:title" content="Ah, la flauta">
     <meta property="og:description" content="¡Bienvenidos a Ah, La Flauta! 🥖✨ Donde cada día horneamos sueños convertidos en deliciosas realidades. Con 33 años de pasión por la panificación, cada mordisco es una experiencia que celebra la tradición y la frescura. Descubre el encanto de nuestra panadería en cada rincón y deja que el aroma de lo recién horneado te transporte a un mundo de sabores auténticos. ¡Ven, siente y saborea la diferencia en Ah, La Flauta! 🌟">
     <meta property="og:image" content="https://ahlaflauta.com.ar/img/PanFlauta.jpg">
     <meta property="og:url" content="https://ahlaflauta.com.ar">
-    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="css/estilosFinal.css" rel="stylesheet"/>
     <link rel="shortcut icon" href="img/MedialunaPag.png" />
 </head>
-    
+
 <body>
-    
+
     <div id="ContenedorPrincipal">
-        
+
         <header>
-            
+
             <div class = "contenedorEncabezado">
-                
+
                 <div class="Encabezado">
-                    
+
                     <a target="_self" href="index.html">
                         <img src="img/LogoEncabezado.png" alt="Ah, la Flauta!">
                     </a>
-                
+
                 </div>
 
-                <div class="menu_Encabezado">
-                    <nav>
-                        <div><a href="index.html" class="active" aria-current="page">NOSOTROS</a></div>
-                        <div><a href="ProductosPanificados.html">PRODUCTOS</a></div>
-                        <div><a href="Contacto.html">CONTACTO</a></div>
-                        <div><a href="Login.html">Login</a></div>
-                    </nav>
-                </div>
+                <nav aria-label="Menú principal" class="menu_Encabezado">
+                    <ul>
+                        <li><a href="index.html" class="active" aria-current="page">NOSOTROS</a></li>
+                        <li><a href="ProductosPanificados.html">PRODUCTOS</a></li>
+                        <li><a href="Contacto.html">CONTACTO</a></li>
+                        <li><a href="Login.html" data-bs-toggle="modal" data-bs-target="#login-modal">Login</a></li>
+                    </ul>
+                </nav>
 
             </div>
-            
+
         </header>
 
         <section class ="ContenidoInicial">
-            
-            <aticle>       
-                
+
+            <aticle>
+
                     <div class="visorImagen">
                         <img class= "imagen" src="img/VisorImg1.jpg" alt="Facturas de hojaldre">
                     </div>
@@ -56,7 +58,7 @@
                     <div class="visorImagen">
                         <img class= "imagen" src="img/VisorImg2.jpg" alt="Merienda con torta y galletas">
                     </div>
-              
+
                     <div class="visorImagen">
                         <img class= "imagen" src="img/VisorImg3.jpg" alt="Canasta con panes caseros">
                     </div>
@@ -82,18 +84,18 @@
                             setTimeout(mostrarImagen,3000);
                     }
                 </script>
-                
+
             </aticle>
-            
+
         </section>
-        
+
         <section class="TituloNosotros">
-            
+
             <article>
                 <h1>NOS ENCANTA HACER COSAS RICAS</h1>
                 <p><strong>Nos gusta pensar en nuestros clientes como nuestros amigos y en nuestra panadería como nuestra casa y por esto, queremos que tengan la mejor experiencia cuando vengan a visitarnos y de esta forma, que regresen. Es una promesa.</strong></p>
             </article>
-            
+
         </section>
 
         <section class="videoPanaderia">
@@ -106,11 +108,11 @@
             Tu navegador no soporta la etiqueta <code>video</code>.
         </video>
         </section>
-        
+
         <footer>
-            
+
             <div id="Fila1Footer">
-                
+
                 <section id="footerLeft">
                     <!-- #Acceso a Facebook -->
                     <a href="https://www.facebook.com/" target= "_blank" title= "Acceso Facebook Ah, la Flauta!">
@@ -129,7 +131,7 @@
                     </a>
 
                 </section>
-                
+
                 <section id="contacto">
                     <!-- #Datos de Contacto -->
                     <datosContacto>
@@ -145,7 +147,7 @@
 
                 <section id="HorarioAtencion">
                     <!-- #Datos de Contacto -->
-                    <datosContacto> 
+                    <datosContacto>
                         <strong> Horarios de Atención:</strong>
                         <ul>
                             <li>Lun. a Sab. 07:30 a 13:00 hs.</li>
@@ -162,19 +164,57 @@
                 </section>
 
             </div>
-            
+
             <div id="Fila2Footer">
                 <section id="copyR">
                     <p>
                         © COPYRIGHT 2019 - Panadería Ah, la Flauta!  - "Distinción en Calidad" <br> Creado por: Los Tres Mosqueteros
                     </p>
-                </section> 
+                </section>
             </div>
-            
+
         </footer>
-        
+
     </div>
-    
+
+    <!-- Login Modal -->
+    <div class="modal" id="login-modal" tabindex="-1" aria-labelledby="login-modal-label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="h4 modal-title" id="login-modal-label">Inicio de sesión</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar modal de inicio de sesión"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form aria-describedby="login-instructions">
+                        <p id="login-instructions">Ingresa tu correo electrónico y contraseña para acceder.</p>
+
+                        <div class="row">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control form-control-lg" id="email" name="email" autocomplete="username" required aria-required="true">
+                        </div>
+
+                        <div class="row">
+                            <label for="password" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control form-control-lg" id="password" name="password" autocomplete="current-password" required aria-required="true">
+                        </div>
+
+                        <div class="row mt-4">
+                            <button type="submit" class="btn btn-lg btn-warning">Iniciar sesión</button>
+                        </div>
+
+                        <div class="row mt-4">
+                            <a href="#recuperar-pass" class="btn btn-link" aria-label="Recuperar contraseña">¿Olvidaste tu contraseña?</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
 </body>
 
 </html>

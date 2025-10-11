@@ -175,12 +175,37 @@ header {
 
 
 /*INICIO REGION CONTACTO*/
+
 .FormContacto {
-    background: rgba(252, 250, 246, 0.5);
+    background: rgba(252, 250, 246, 0.8);
     margin-bottom: 10px;
     padding: 2rem;
 }
 
+.FormContacto h1 {
+    font-family: Cabecera;
+    text-align: center;
+    color: brown;
+}
+
+.FormContacto p,
+.FormContacto label,
+.FormContacto input,
+.FormContacto textarea,
+.FormContacto button {
+    font-family: LetraInterna;
+    font-size: 1.2rem;
+}
+
+.FormContacto label, button {
+    font-weight: bold;
+}
+
+.FormContacto input, .FormContacto textarea {
+    border: 1px solid #666;
+}
+
+/*
 .FormContacto h1 {
     font-family: Cabecera;
     text-align: center;
@@ -219,24 +244,22 @@ header {
 
 .cuadroContacto {
     width: 100%;
-}
+}*/
 
 #EnviarContacto {
-    margin-top: 1.5rem;
+    /*margin-top: 1.5rem;
     padding: 0.75rem;
-    width: 100%;
+    width: 100%;*/
     background-color: #7a230a;
-    color: #000;
-    font-size: 1rem;
+    color: white;
     font-weight: bold;
-    border: none;
+    /*border: none;
     border-radius: 0.5rem;
     cursor: pointer;
-    color: floralwhite;
+    color: floralwhite;*/
 }
 
 #EnviarContacto:hover {
-    /*Resalta el item cuando pasa el cursor encima*/
     background-color: #F9A83B;
 }
 
