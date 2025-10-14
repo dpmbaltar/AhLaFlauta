@@ -550,3 +550,26 @@ datosContacto ul {
     margin: auto;
     margin-bottom: 4rem;
 }
+
+/* Modal de login */
+
+.login-modal {
+    font-family: LetraInterna;
+}
+
+/* Mapa de sitio */
+
+.sitemap {
+    font-family: LetraInterna;
+    font-size: 1.4rem;
+}
+
+.sitemap .card {
+    background: rgba(252, 250, 246, 0.9);
+    border: 0;
+}
+
+.sitemap h1 {
+    font-family: Cabecera;
+    color: #7a230a;
+}
