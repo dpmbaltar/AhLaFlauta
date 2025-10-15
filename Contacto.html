@@ -48,38 +48,85 @@
                     <p id="instrucciones-contacto">Todos los campos marcados con * son obligatorios.</p>
 
                     <div class="row mt-2">
-                        <label for="comboNombre" class="form-label">Nombre y Apellido *</label>
-                        <input id="comboNombre" class="form-control form-control-lg" name="nombre" type="text" required aria-required="true" autocomplete="name">
+                        <div class="col-md">
+                            <label for="comboNombre" class="form-label">Nombre y Apellido *</label>
+                            <input id="comboNombre" class="form-control form-control-lg" name="nombre" type="text" autocomplete="name" aria-required="true" required>
+                        </div>
+                        <div class="col-md">
+                            <label for="comboEmail" class="form-label">Correo electrónico *</label>
+                            <input id="comboEmail" class="form-control form-control-lg" name="email" type="email" autocomplete="email" aria-required="true" required>
+                        </div>
                     </div>
 
                     <div class="row mt-2">
-                        <label for="comboEmail" class="form-label">Correo electrónico *</label>
-                        <input id="comboEmail" class="form-control form-control-lg" name="email" type="email" required aria-required="true" autocomplete="email">
+                        <div class="col-md">
+                            <label for="comboTel" class="form-label">Teléfono *</label>
+                            <input id="comboTel" class="form-control form-control-lg" name="phone" type="tel" autocomplete="phone" aria-required="true" required>
+                        </div>
+                        <div class="col-md">
+                            <label for="deliver-date" class="form-label">Fecha de entrega *</label>
+                            <input id="deliver-date" class="form-control form-control-lg" name="deliver_date" type="datetime-local" aria-required="true" required >
+                        </div>
                     </div>
 
                     <div class="row mt-2">
-                        <label for="comboTel" class="form-label">Teléfono *</label>
-                        <input id="comboTel" class="form-control form-control-lg" name="phone" type="tel" required aria-required="true" autocomplete="phone">
+                        <div class="col-md">
+                            <label for="product" class="form-label">Producto *</label>
+                            <select id="product" class="form-select form-select-lg" name="product" aria-required="true" aria-label="Selección de producto" required>
+                                <option selected>Seleccionar producto</option>
+                                <optgroup label="Panificados">
+                                    <option value="1">Pan flauta</option>
+                                    <option value="2">Pan mignon</option>
+                                    <option value="3">Pan de molde</option>
+                                    <option value="4">Pan de Viena</option>
+                                </optgroup>
+                                <optgroup label="Masas dulces">
+                                    <option value="5">Facturas</option>
+                                    <option value="6">Pastafrola</option>
+                                    <option value="7">Pepas</option>
+                                    <option value="8">Cañoncitos de hojaldre</option>
+                                    <option value="9">Milhojas</option>
+                                    <option value="10">Alfajores de Maicena</option>
+                                    <option value="11">Torta</option>
+                                </optgroup>
+                                <optgroup label="Masas saladas">
+                                    <option value="12">Bizcochitos</option>
+                                    <option value="13">Grisines</option>
+                                    <option value="14">Marineras</option>
+                                    <option value="15">Chipá</option>
+                                </optgroup>
+                                <optgroup label="Saludables">
+                                    <option value="16">Tostadas</option>
+                                    <option value="17">Galletas de semillas</option>
+                                    <option value="18">Pan sin sal</option>
+                                    <option value="19">Pan de Salvado</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="col-md">
+                            <label for="quantity" class="form-label">Cantidad *</label>
+                            <input id="quantity" class="form-control form-control-lg" name="quantity" type="number" maxlength="3" min="1" max="100" aria-required="true" required>
+                        </div>
                     </div>
 
                     <div class="row mt-2">
-                        <label for="deliver-date" class="form-label">Fecha de entrega *</label>
-                        <input id="deliver-date" class="form-control form-control-lg" name="deliver_date" type="datetime-local" required aria-required="true">
+                        <div class="col">
+                            <label for="comboAsunto" class="form-label">Asunto *</label>
+                            <input id="comboAsunto" class="form-control form-control-lg" name="asunto" type="text" aria-required="true" required>
+                        <div>
                     </div>
 
                     <div class="row mt-2">
-                        <label for="comboAsunto" class="form-label">Asunto *</label>
-                        <input id="comboAsunto" class="form-control form-control-lg" name="asunto" type="text" required aria-required="true">
+                        <div class="col">
+                            <label for="comboDescripcion" class="form-label">Mensaje *</label>
+                            <textarea id="comboDescripcion" class="form-control form-control-lg" name="mensaje" rows="6" aria-required="true" required></textarea>
+                        </div>
                     </div>
 
-                    <div class="row mt-2">
-                        <label for="comboDescripcion" class="form-label">Mensaje *</label>
-                        <textarea id="comboDescripcion" class="form-control form-control-lg" name="mensaje" rows="6" required
-                            aria-required="true"></textarea>
-                    </div>
-
-                    <div class="row mt-2">
-                        <button id="EnviarContacto" class="btn btn-lg" type="submit">Enviar formulario</button>
+                    <div class="row mt-4">
+                        <div class="col d-grid gap-2">
+                            <button id="EnviarContacto" class="btn btn-lg" type="submit">Enviar formulario</button>
+                        </div>
                     </div>
                 </form>
             </section>

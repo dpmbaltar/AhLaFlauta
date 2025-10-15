@@ -192,16 +192,19 @@ header {
 .FormContacto label,
 .FormContacto input,
 .FormContacto textarea,
-.FormContacto button {
+.FormContacto button,
+.FormContacto select,
+.FormContacto select optgroup,
+.FormContacto select option {
     font-family: LetraInterna;
     font-size: 1.2rem;
 }
 
-.FormContacto label, button {
+.FormContacto label, .FormContacto button {
     font-weight: bold;
 }
 
-.FormContacto input, .FormContacto textarea {
+.FormContacto input, .FormContacto textarea, .FormContacto select {
     border: 1px solid #666;
 }
 
