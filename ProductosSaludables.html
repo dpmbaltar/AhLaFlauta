@@ -43,10 +43,16 @@
             
         </header>   
     
-        <nav class = "MENUIZQ_nav"><h1>Panificados</h1>
-            
+        <nav aria-label="breadcrumb" class="breadcrumb-nav py-2 px-3">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="ProductosPanificados.html">Productos</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Saludables</li>
+            </ol>
+        </nav>
+
+         <!-- Menu vertical anterior
+        <nav class = "MENUIZQ_nav"><h1>Panificados</h1>            
             <br/>
-            <!--Menú de Productos -->
             <ul class="menu">
                 <li><a href="ProductosPanificados.html">Panes Leudados</a></li>    
                 <li><a href="ProductosMDulces.html">Masas Dulces</a></li>
@@ -54,8 +60,14 @@
                 <li><a href="ProductosSaludables.html">Saludables</a></li>
             </ul>
             
-        </nav>
- 
+        </nav>-->
+
+        <nav class="nav flex-column nav-pills" role="navigation" aria-label="Categorías de productos">
+            <a class="nav-link" href="ProductosPanificados.html" aria-current="page">Panes Leudados</a>
+            <a class="nav-link" href="ProductosMDulces.html">Masas Dulces</a>
+            <a class="nav-link" href="ProductosMSaladas.html">Masas Saladas</a>
+            <a class="nav-link active" href="ProductosSaludables.html">Saludables</a>
+        </nav>        
     
         <!--Definición Section PRODUCTOS: SALUDABLES-->
         <section id="cuerpo">
