@@ -576,6 +576,10 @@ datosContacto ul {
     color: #7a230a;
 }
 
+.sitemap a {
+    color: #7a230a;
+}
+
 /* Migas de pan */
 .breadcrumb-nav {
   background: rgba(255, 204, 0, 0.55);
