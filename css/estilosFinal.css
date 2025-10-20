@@ -673,3 +673,22 @@ datosContacto ul {
     box-shadow: 0 0 10px rgba(0,0,0,0.25);
 }
 
+/*Mejora foco perceptible*/
+:focus-visible {
+    outline: 3px solid #faf0d0;
+    outline-offset: 3px;
+    border-radius: 0.4rem;
+    transition: outline 0.2s ease;
+}
+
+#EnviarContacto:focus-visible { /* le agregás un id="Ingresar" al primer botón */
+outline: 3px solid #faf0d0;
+outline-offset: 3px;
+border-radius: 0.4rem;
+}
+
+#Ingresar:focus-visible { /* le agregás un id="Ingresar" al primer botón */
+outline: 3px solid #7a230a;
+outline-offset: 3px;
+border-radius: 0.4rem;
+}

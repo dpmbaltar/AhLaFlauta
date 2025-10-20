@@ -29,7 +29,7 @@
                         <li><a href="index.html">Nosotros</a></li>
                         <li><a href="ProductosPanificados.html" aria-current="page" class="active">Productos</a></li>
                         <li><a href="Contacto.html">Contacto</a></li>
-                        <li><a href="Login.html">Login</a></li>
+                        <li><a href="Login.html" data-bs-toggle="modal" data-bs-target="#login-modal">Login</a></li>
                     </ul>
                 </nav>
             </div>
@@ -178,6 +178,41 @@
                 </p>
             </div>
         </footer>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal" id="login-modal" tabindex="-1" aria-labelledby="login-modal-label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="h4 modal-title" id="login-modal-label">Inicio de sesión</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar modal de inicio de sesión"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form aria-describedby="login-instructions">
+                        <p id="login-instructions">Ingresa tu correo electrónico y contraseña para acceder.</p>
+
+                        <div class="row">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control form-control-lg" id="email" name="email" autocomplete="username" required aria-required="true">
+                        </div>
+
+                        <div class="row">
+                            <label for="password" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control form-control-lg" id="password" name="password" autocomplete="current-password" required aria-required="true">
+                        </div>
+
+                        <div class="row mt-4">
+                            <button id="Ingresar" type="submit" class="btn btn-lg btn-warning">Iniciar sesión</button>
+                        </div>
+
+                        <div class="row mt-4">
+                            <a href="#recuperar-pass" class="btn btn-link" aria-label="Recuperar contraseña">¿Olvidaste tu contraseña?</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
