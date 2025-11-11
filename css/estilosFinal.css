@@ -8,6 +8,15 @@
     src: url("../font/LetraInterna4.otf");
 }
 
+/* Variables */
+
+:root {
+    --fondo-claro: rgba(252, 250, 246, 0.9);
+    --fuente-cabecera: Cabecera;
+    --fuente-principal: LetraInterna, Arial, sans-serif;
+    --color-rojo-oscuro: #7A230A;
+}
+
 
 html,
 body {
@@ -25,8 +34,8 @@ body {
     position: relative;
 }
 
+/* Inicio Estilos Encabezado */
 
-/* Inicio Estilos Encabezado*/
 header {
     width: 100%;
     height: 80px;
@@ -91,69 +100,45 @@ header {
     border-radius: 8px;
 }
 
-/* Fin Estilos Encabezado*/
+/* Fin Estilos Encabezado */
 
+/* Inicio Estilos Página de Inicio */
 
-/*INICIO PÁGINA INICIO*/
 .ContenidoInicial {
-    height: 100%;
-    width: 90%;
-    margin-left: 5%;
-    margin-bottom: 15px;
+    background: var(--fondo-claro);
+}
+
+.CarouselInicio,
+.TituloNosotros,
+.VideoPanaderia {
+    margin-bottom: 3rem;
+}
+
+.TituloNosotros h1,
+.VideoPanaderia h1 {
+    color: var(--color-rojo-oscuro);
+    font-family: var(--fuente-cabecera);
+    padding-bottom: 1.5rem;
     text-align: center;
-}
-
-.imagen {
-    width: 60%;
-    height: 60%;
-}
-
-.visorImagen {
-    display: none;
-
-}
-
-.TituloNosotros {
-    width: 90%;
-    background: rgba(252, 250, 246, 0.5);
-    margin-left: 5%;
-    margin-left: 5%;
-    margin-bottom: 15px;
-    text-align: center;
-    font-family: LetraInterna;
-    height: 100px
 }
 
 .TituloNosotros p {
-    font-size: 18px;
-    line-height: 20px;
-    margin-bottom: 15px;
-    font-family: LetraInterna, Arial, sans-serif;
-    color: #000000;
-}
-
-/*FIN PÁGINA INICIO*/
-
-/* INICIO ESTILO VIDEO */
-.videoPanaderia {
+    font-family: var(--fuente-principal);
+    font-size: 1.5rem;
+    padding: 0 1.5rem;
     text-align: center;
-    margin: 20px 0;
 }
 
-.videoPanaderia h2 {
-    font-family: Cabecera;
-    color: brown;
-    margin-bottom: 18px;
+.VideoPanaderia {
+    text-align: center;
 }
 
-.videoPanaderia video {
-    width: 800px;
-    height: 450px;
-    border-radius: 10px;
+.VideoPanaderia video {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
 }
 
-/*FIN ESTILO VIDEO*/
+/* Fin Estilos Página de Inicio */
 
 /*Inicio Resto de Página*/
 .MENUIZQ_nav {
