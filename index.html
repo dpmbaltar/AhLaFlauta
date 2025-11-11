@@ -53,47 +53,40 @@
             </ol>
         </nav>
 
-        <section class ="ContenidoInicial">
-
-            <aticle>
-
-                    <div class="visorImagen">
-                        <img class= "imagen" src="img/VisorImg1.jpg" alt="Facturas de hojaldre">
+        <main class ="container mt-4">
+            <section>
+                <div id="carousel" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Imagen 1"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Imagen 2"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Imagen 3"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Imagen 4"></button>
                     </div>
-
-                    <div class="visorImagen">
-                        <img class= "imagen" src="img/VisorImg2.jpg" alt="Merienda con torta y galletas">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/VisorImg1.jpg" class="d-block w-100" alt="acturas de hojaldre">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/VisorImg2.jpg" class="d-block w-100" alt="Merienda con torta y galletas">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/VisorImg3.jpg" class="d-block w-100" alt="Canasta con panes caseros">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/VisorImg4.jpg" class="d-block w-100" alt="Variedad de panes de masa madre">
+                        </div>
                     </div>
-
-                    <div class="visorImagen">
-                        <img class= "imagen" src="img/VisorImg3.jpg" alt="Canasta con panes caseros">
-                    </div>
-
-                    <div class="visorImagen">
-                        <img class= "imagen" src="img/VisorImg4.jpg" alt="Variedad de panes de masa madre">
-                    </div>
-
-                <script>
-                    var indImg = 0;
-                    mostrarImagen();
-                    function mostrarImagen() {
-                       var i;
-                       var img = document.getElementsByClassName("visorImagen");
-                       for (i = 0; i < img.length; i++) {
-                            img[i].style.display = "none";
-                       }
-
-                       indImg++;
-
-                       if(indImg > img.length) {indImg = 1}
-                            img[indImg-1].style.display = "block";
-                            setTimeout(mostrarImagen,3000);
-                    }
-                </script>
-
-            </aticle>
-
-        </section>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </section>
+        </main>
 
         <section class="TituloNosotros">
 
