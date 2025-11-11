@@ -1,3 +1,9 @@
+/*
+ * ============================================================================
+ * Fuentes
+ * ============================================================================
+ */
+
 @font-face {
     font-family: Cabecera;
     src: url("../font/LetraCabecera3.ttf");
@@ -8,15 +14,26 @@
     src: url("../font/LetraInterna4.otf");
 }
 
-/* Variables */
+/*
+ * ============================================================================
+ * Variables
+ * ============================================================================
+ */
 
 :root {
     --fondo-claro: rgba(252, 250, 246, 0.9);
+    --fondo-naranja-claro: rgba(227, 169, 43, 0.9);
     --fuente-cabecera: Cabecera;
     --fuente-principal: LetraInterna, Arial, sans-serif;
     --color-rojo-oscuro: #7A230A;
+    --color-naranja-claro: #F9A83B;
 }
 
+/*
+ * ============================================================================
+ * Base
+ * ============================================================================
+ */
 
 html,
 body {
@@ -34,7 +51,11 @@ body {
     position: relative;
 }
 
-/* Inicio Estilos Encabezado */
+/*
+ * ============================================================================
+ * Encabezado
+ * ============================================================================
+ */
 
 header {
     width: 100%;
@@ -94,15 +115,17 @@ header {
 
 .menu_Encabezado nav div a.active,
 .menu_Encabezado ul li a.active {
-    background-color: #7A230A;
+    background-color: var(--color-rojo-oscuro);
     color: #fff;
     padding: 5px 15px;
     border-radius: 8px;
 }
 
-/* Fin Estilos Encabezado */
-
-/* Inicio Estilos Página de Inicio */
+/*
+ * ============================================================================
+ * Página de Inicio
+ * ============================================================================
+ */
 
 .ContenidoInicial {
     background: var(--fondo-claro);
@@ -155,21 +178,25 @@ header {
     margin: 0px;
 }
 
-/*Fin Resto de Página*/
-
-
-/*INICIO REGION CONTACTO*/
+/*
+ * ============================================================================
+ * Página de Contacto
+ * ============================================================================
+ */
 
 .FormContacto {
-    background: rgba(252, 250, 246, 0.8);
-    margin-bottom: 10px;
+    background: var(--fondo-claro);
+    margin-bottom: 1rem;
     padding: 2rem;
 }
 
-.FormContacto h1 {
-    font-family: Cabecera;
+.FormContacto h1,
+.MapaGoogle h1 {
+    font-family: var(--fuente-cabecera);
     text-align: center;
-    color: brown;
+    color: var(--color-rojo-oscuro);
+    margin-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 .FormContacto p,
@@ -180,95 +207,33 @@ header {
 .FormContacto select,
 .FormContacto select optgroup,
 .FormContacto select option {
-    font-family: LetraInterna;
-    font-size: 1.2rem;
+    font-family: var(--fuente-principal);
+    font-size: 1.25rem;
 }
 
-.FormContacto label, .FormContacto button {
+.FormContacto label,
+.FormContacto button {
     font-weight: bold;
 }
 
-.FormContacto input, .FormContacto textarea, .FormContacto select {
+.FormContacto input,
+.FormContacto textarea,
+.FormContacto select {
     border: 1px solid #666;
 }
-
-/*
-.FormContacto h1 {
-    font-family: Cabecera;
-    text-align: center;
-    color: brown;
-}
-
-.FormContacto p {
-    font-family: LetraInterna;
-    text-align: center;
-}
-
-.FormContacto label {
-    font-family: LetraInterna;
-    font-weight: bold;
-}
-
-.FormContacto input {
-    width: 100%;
-    padding: 0.75rem;
-    margin-top: 0.25rem;
-    border: 1px solid #666;
-    border-radius: 0.5rem;
-    box-sizing: border-box;
-    font-size: 1rem;
-}
-
-.FormContacto textarea {
-    width: 100%;
-    height: 150px;
-    border: 1px solid #666;
-    border-radius: 0.5rem;
-    box-sizing: border-box;
-    padding: 0.75rem;
-    margin-top: 0.25rem;
-}
-
-.cuadroContacto {
-    width: 100%;
-}*/
 
 #EnviarContacto {
-    /*margin-top: 1.5rem;
-    padding: 0.75rem;
-    width: 100%;*/
-    background-color: #7a230a;
+    background-color: var(--color-rojo-oscuro);
     color: white;
-    font-weight: bold;
-    /*border: none;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    color: floralwhite;*/
+    font-weight: bolder;
 }
 
 #EnviarContacto:hover {
-    background-color: #F9A83B;
+    background-color: var(--color-naranja-claro);
 }
 
-#Fila1 {
-    height: 35px;
-    padding: 5px;
-}
-
-#Fila2 {
-    height: 35px;
-    padding: 5px;
-}
-
-#Fila3 {
-    height: 170px;
-    padding: 5px;
-}
-
-#Fila4 {
-    width: 100%;
-    height: 55px;
-    text-align: center;
+.MapaGoogle {
+    background: var(--fondo-claro);
 }
 
 .MapaGoogle iframe {
@@ -276,112 +241,84 @@ header {
     height: 300px;
 }
 
-/*FIN REGION CONTACTO*/
+/*
+ * ============================================================================
+ * Páginas de Productos
+ * ============================================================================
+ */
 
-
-/*Inicio Clases para descripcioón productos*/
-#encabezadoProd {
-    background: rgba(252, 250, 246, 0.5);
-    padding-bottom: 5px;
-    margin-bottom: 5px;
+.productos {
+    background: var(--fondo-claro);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
 }
 
-infoEncabezado {
+.encabezado-producto {
+    padding: 2rem;
+    margin-bottom: 0;
     text-align: center;
-    font-size: 18px;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    height: auto;
 }
 
-infoEncabezado h1 {
-    margin: 0px;
-
-}
-
-infoEncabezado p {
-    margin: 0px;
-}
-
-infoEncabezado p {
-    font-family: LetraInterna;
-}
-
-infoEncabezado h1 {
+.encabezado-producto h1 {
+    margin: 1rem;
     font-family: Cabecera;
-    Color: brown;
-    font-size: 30px;
-    float: center;
-    margin-right: 15px;
-    margin-top: 0px;
+    color: brown;
+    font-size: 2rem;
 }
 
-/*Fin Clases para descripcioón productos*/
-
-
-/* INICIO ESTILO DESCRIPCION PRODUCTOS*/
-#variedad {
-    width: 50%;
-    height: 20%;
-    text-decoration: none;
-    margin: 3px;
+.encabezado-producto p {
+    font-family: var(--fuente-principal);
 }
 
-.infoVariedad {
+.producto {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que se adapte en móviles */
+    align-items: flex-start;
+    /*margin: 1.5rem 0;*/
+    gap: 1rem;
+    padding-bottom: 1.5rem;
     text-align: left;
-    font-family: LetraInterna;
-    font-size: 18px;
 }
 
-#grupoVariedades {
-    margin-bottom: 5px;
+.producto h2 {
+    font-family: var(--fuente-cabecera);
+    color: var(--color-rojo-oscuro);
 }
 
-.variedades {
-    padding: 10px;
-    background: rgba(252, 250, 246, 0.5);
-    overflow: hidden;
+.producto .figura {
+    flex: 1 1 200px;
+    /* Crece, encoge, base mínima */
+    max-width: 160px;
 }
 
-.descripcion {
-    text-align: left;
-    font-family: LetraInterna;
-    width: 70%;
-    font-size: 17px;
-    float: left
-}
-
-.descripcion h1 {
-    font-family: Cabecera;
-    Color: brown;
-    margin: 0px;
-    margin-bottom: 5px;
-}
-
-.descripcion p {
-    margin: 0px;
-
-}
-
-.imagenProd {
-    width: 30%;
-    height: 100%;
-    float: left;
-}
-
-#cuerpo {
-    text-align: center;
-    width: 75%;
-    float: left;
-    margin-left: 5px;
-}
-
-.imgCircular {
+.producto .figura img {
+    height: 150px;
+    width: 150px;
     border-radius: 60%;
-    height: 130px;
-    width: 130px;
+    display: block;
 }
 
-/* FIN ESTILO DESCRIPCION PRODUCTOS*/
+.producto .descripcion {
+    font-family: var(--fuente-principal);
+    flex: 2 1 400px;
+    /* Más espacio para el texto */
+    min-width: 250px;
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
 
-/*Inicio Clases para Menú*/
+/*
+ * ============================================================================
+ * Menú Principal
+ * ============================================================================
+ */
+
 .menu {
     /*Define el estilo del menu*/
     width: 100%;
@@ -400,7 +337,7 @@ infoEncabezado h1 {
     border-radius: 15px 15px 15px 15px;
     border-color: wheat;
     border-width: 3px 3px 3px 3px;
-    background-color: #7A230A;
+    background-color: var(--color-rojo-oscuro);
 }
 
 /*Ultimo elemetos entre elementos hermanos*/
@@ -423,107 +360,58 @@ infoEncabezado h1 {
     background-color: #F9A83B;
 }
 
-/*Fin Clases para Menú*/
+/*
+ * ============================================================================
+ * Pie de Página
+ * ============================================================================
+ */
 
-
-/*Inicio Pie de Pagina*/
 footer {
-    text-align: center;
-    height: 160px;
     width: 100%;
-    background-color: rgba(255, 204, 0, 0.4);
-    bottom: 0px;
-    /*Lo pone al final*/
-    clear: both;
+    background-color: var(--fondo-naranja-claro);
+    font-family: var(--fuente-principal);
 }
 
-#Fila1Footer {
-    height: 70%;
+footer section {
+    margin-bottom: 1rem;
 }
 
-#Fila2Footer {
-    height: 30%;
-    font-family: LetraInterna;
+footer a,
+footer a:link,
+footer a:visited {
+    color: var(--color-rojo-oscuro);
 }
 
-#footerLeft {
-    width: 25%;
-    margin-top: 2em;
-    float: left;
-}
-
-#footerLeft a img {
+#FooterLeft a img {
     width: 45px;
     height: 45px;
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-#footerLeft a img:hover {
+#FooterLeft a img:hover {
     transform: scale(1.4);
     opacity: 0.8;
 }
 
-#footerLeft a {
+#FooterLeft a {
     text-decoration: none;
-    margin: 3px;
+    margin: 0.25rem;
 }
 
-datosContacto {
-    text-align: left;
-    font-family: LetraInterna;
-    font-size: 18px;
-}
-
-datosContacto ul {
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-}
-
-#contacto {
-    width: 24%;
-    float: left;
-    font-family: LetraInterna;
-}
-
-#contacto p {
-    text-align: left;
-}
-
-#HorarioAtencion {
-    width: 24%;
-    float: left;
-    font-family: LetraInterna;
-}
-
-#HorarioAtencion ul li {
-    list-style: none;
-    display: block;
-    text-align: left;
-}
-
-#footerRight {
-    width: 25%;
-    float: left;
-}
-
-#footerRight a img {
+#FooterRight a img {
     width: 100px;
     height: 100px;
 }
 
-
-#copyR p {
-    margin: 0px;
-    padding: 0px;
+#HorarioAtencion ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-/*FinPie de Pagina*/
-
-#TituloNosotros {
-    width: 100%;
-    height: 150px;
-
+#HorarioAtencion ul li {
+    font-weight: bold;
+    list-style: none;
 }
 
 .contenedor {
@@ -538,41 +426,59 @@ datosContacto ul {
     margin-bottom: 4rem;
 }
 
-/* Modal de login */
+/*
+ * ============================================================================
+ * Modal de Login
+ * ============================================================================
+ */
 
 .login-modal {
-    font-family: LetraInterna;
+    font-family: var(--fuente-principal);
 }
 
-/* Mapa de sitio */
+/*
+ * ============================================================================
+ * Mapa del Sitio
+ * ============================================================================
+ */
 
 .sitemap {
-    font-family: LetraInterna;
+    background: var(--fondo-claro);
+    font-family: var(--fuente-principal);
     font-size: 1.4rem;
 }
 
-.sitemap .card {
-    background: rgba(252, 250, 246, 0.9);
-    border: 0;
+.sitemap h1 {
+    font-family: var(--fuente-cabecera);
+    color: var(--color-rojo-oscuro);
+    text-align: center;
 }
 
-.sitemap h1 {
-    font-family: Cabecera;
-    color: #7a230a;
+.sitemap ul li {
+    list-style: "🥐";
+}
+
+.sitemap ul li ul li {
+    list-style: "🥖";
 }
 
 .sitemap a {
-    color: #7a230a;
+    color: var(--color-rojo-oscuro);
 }
 
-/* Migas de pan */
+/*
+ * ============================================================================
+ * Migas de Pan
+ * ============================================================================
+ */
+
 .breadcrumb-nav {
   background: rgba(255, 204, 0, 0.55);
   backdrop-filter: blur(3px);
   padding: 0.6rem 1rem;
   margin: 0;
   border: none;
-  border-top: 2px solid #7a230a;
+  border-top: 2px solid var(--color-rojo-oscuro);
   box-shadow: 0 2px 6px rgba(122, 35, 10, 0.25);
 }
 
@@ -588,13 +494,13 @@ datosContacto ul {
 
 .breadcrumb-item + .breadcrumb-item::before {
   content: "›";
-  color: #7a230a;
+  color: var(--color-rojo-oscuro);
   font-weight: bold;
   padding: 0 0.3rem;
 }
 
 .breadcrumb a {
-  color: #7a230a;
+  color: var(--color-rojo-oscuro);
   text-decoration: none;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
@@ -611,26 +517,27 @@ datosContacto ul {
   font-weight: bold;
 }
 
-/*Fin Migas de Pan */
+/*
+ * ============================================================================
+ * Nuevo Menú Vertical
+ * ============================================================================
+ */
 
-/*Nuevo Menú Vertical*/
 /* Contenedor del menú */
 .nav.flex-column {
-    width: 20%;
-    float: left;
     text-align: center;
     margin-top: 1rem;
 }
 
 /* Enlaces del menú */
 .nav-link {
-    background-color: #7a230a;
+    background-color: var(--color-rojo-oscuro);
     color: #ffffff;
     border: 2px solid #F9A83B;
     border-radius: 0.5rem;
     margin-bottom: 0.5rem;
     padding: 0.75rem 1rem;
-    font-family: LetraInterna, sans-serif;
+    font-family: var(--fuente-principal);
     font-size: 1rem;
     transition: background-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
     box-shadow: 1px 1px 4px rgba(0,0,0,0.15);
@@ -642,8 +549,8 @@ datosContacto ul {
 .nav.flex-column .nav-link:hover,
 .nav.flex-column .nav-link:focus {
     background-color: #f5deb3;
-    color: #7a230a;
-    border-color: #7a230a;
+    color: var(--color-rojo-oscuro);
+    border-color: var(--color-rojo-oscuro);
     box-shadow: 0 0 8px rgba(0,0,0,0.2);
     text-decoration: none;
 }
@@ -651,8 +558,8 @@ datosContacto ul {
 /* Enlace activo (actual) */
 .nav.flex-column .nav-link.active {
     background-color: #F9A83B;
-    color: #7a230a;
-    border: 2px solid #7a230a;
+    color: var(--color-rojo-oscuro);
+    border: 2px solid var(--color-rojo-oscuro);
     font-weight: bold;
     text-decoration: underline;
     box-shadow: 0 0 10px rgba(0,0,0,0.25);
@@ -666,14 +573,16 @@ datosContacto ul {
     transition: outline 0.2s ease;
 }
 
-#EnviarContacto:focus-visible { /* le agregás un id="Ingresar" al primer botón */
-outline: 3px solid #faf0d0;
-outline-offset: 3px;
-border-radius: 0.4rem;
+#EnviarContacto:focus-visible {
+    /* le agregás un id="Ingresar" al primer botón */
+    outline: 3px solid #faf0d0;
+    outline-offset: 3px;
+    border-radius: 0.4rem;
 }
 
-#Ingresar:focus-visible { /* le agregás un id="Ingresar" al primer botón */
-outline: 3px solid #7a230a;
-outline-offset: 3px;
-border-radius: 0.4rem;
+#Ingresar:focus-visible {
+    /* le agregás un id="Ingresar" al primer botón */
+    outline: 3px solid var(--color-rojo-oscuro);
+    outline-offset: 3px;
+    border-radius: 0.4rem;
 }

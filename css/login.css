@@ -1,6 +1,8 @@
 .login {
-    background: rgba(252, 250, 246, 0.8);
-    font-size: 1.4rem;
+    background: var(--fondo-claro);
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 body {
