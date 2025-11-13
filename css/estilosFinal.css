@@ -63,10 +63,30 @@ header {
     margin-bottom: 0px;
 }
 
-.contenedorEncabezado {
+.ContenedorEncabezado {
     height: 100%;
     width: 100%;
-    background-color: rgba(255, 204, 0, 0.4);
+    background-color: var(--fondo-naranja-claro);
+}
+
+.MenuEncabezado nav ul li a.nav-link {
+    background: none;
+    box-shadow: none;
+    border-width: 0;
+    color: black;
+    font-size: 2.5rem;
+    font-family: var(--fuente-principal);
+    font-weight: 400;
+    margin: 0.25rem;
+    padding: 0.25rem 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.MenuEncabezado nav ul li a.nav-link.active {
+    background-color: var(--color-rojo-oscuro);
+    color: #fff;
+    border-radius: 0.5rem;
 }
 
 .Encabezado {
@@ -78,47 +98,6 @@ header {
 .Encabezado a img {
     max-height: 100%;
     max-width: 100%;
-}
-
-.menu_Encabezado {
-    width: 65%;
-    height: 100%;
-    float: right;
-}
-
-.menu_Encabezado ul {
-    margin: 0;
-}
-
-.menu_Encabezado nav div,
-.menu_Encabezado ul li {
-    float: left;
-    text-align: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    height: 100%;
-}
-
-.menu_Encabezado ul li {
-    display: block;
-}
-
-.menu_Encabezado nav div a,
-.menu_Encabezado ul li a {
-    color: black;
-    font-size: 2.2vw;
-    font-family: LetraInterna;
-    text-decoration: none;
-    text-transform: uppercase;
-    line-height: 90px;
-}
-
-.menu_Encabezado nav div a.active,
-.menu_Encabezado ul li a.active {
-    background-color: var(--color-rojo-oscuro);
-    color: #fff;
-    padding: 5px 15px;
-    border-radius: 8px;
 }
 
 /*
@@ -311,53 +290,6 @@ header {
     font-size: 1.25rem;
     margin-top: 0;
     margin-bottom: 0.5rem;
-}
-
-/*
- * ============================================================================
- * Menú Principal
- * ============================================================================
- */
-
-.menu {
-    /*Define el estilo del menu*/
-    width: 100%;
-    list-style: none;
-    text-align: center;
-    text-shadow: 15px 20px 45px yelow;
-    padding: 0px;
-    margin: 0px;
-}
-
-.menu li {
-    /*Define el estilo de cada item del menu*/
-    font-family: LetraInterna;
-    padding: 10px 0px;
-    border: ridge;
-    border-radius: 15px 15px 15px 15px;
-    border-color: wheat;
-    border-width: 3px 3px 3px 3px;
-    background-color: var(--color-rojo-oscuro);
-}
-
-/*Ultimo elemetos entre elementos hermanos*/
-.menu li:last-child {
-    border-bottom: groove none;
-    border-bottom-width: 3px;
-}
-
-/*Color cuando no se ha visitado el item*/
-.menu li a:link,
-
-.menu li a:visited {
-    /*Color ya has visitado el item*/
-    text-decoration: none;
-    color: floralwhite;
-}
-
-.menu li:hover {
-    /*Resalta el item cuando pasa el cursor encima*/
-    background-color: #F9A83B;
 }
 
 /*
