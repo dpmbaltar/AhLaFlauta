@@ -387,11 +387,11 @@ footer a:visited {
 }
 
 .sitemap ul li {
-    list-style: "🥐";
+    list-style: "🥖";
 }
 
 .sitemap ul li ul li {
-    list-style: "🥖";
+    list-style: "🥐";
 }
 
 .sitemap a {
